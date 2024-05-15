@@ -1,0 +1,256 @@
+/********** GuyKat CSS START **********/
+body {
+
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+/********** Global Styling START **********/
+
+/**Colour variables **/
+:root {
+/* docebo overwrites */
+--heiro-color-layout-background: #fff!important;
+
+/* custom additions */
+--heiro-custom-pink: #F0B3CE;
+--heiro-custom-pink-opacity:#f0b3ce88; /* opacity */
+--heiro-custom-orange: #EB816D;
+--heiro-custom-light-orange: #FFA797;
+--heiro-custom-light-purple : #7771D6;      
+}
+
+/********** Global Styling END **********/
+
+
+
+
+
+
+
+
+
+/********** Docebo Top Bar START **********/
+
+/********** Docebo Top Bar END **********/
+
+
+
+
+
+
+
+
+
+
+/********** Home Page 2024 START **********/
+
+/********** Entire Page START **********/
+
+/********** Entire Page END **********/
+
+
+
+
+
+
+
+
+
+
+/********** Nav Bar START **********/
+#doc-bspage-43 {
+z-index: 2;
+}
+
+#doc-bspage-43 .htmlwidget .content {
+overflow-y: visible;
+}
+
+.bs-nav-bar {
+margin: auto;
+background-color: var(--heiro-custom-pink-opacity);
+position: relative;
+width: 100%;
+height: 30px;
+display: flex;
+justify-content: center;
+gap: 20px;
+color: black;
+text-align: center;
+z-index: 1;
+}
+
+.bs-nav-bar a {
+color: black;
+text-decoration: none;
+}
+
+.bs-nav-bar .normal-link,
+.bs-nav-bar .dropdown-title {
+padding: 0 10px;
+height: 30px; /*must be same as nav bar itself*/
+font-family: 'Verdana';
+}
+
+.bs-nav-bar .normal-link,
+.bs-nav-bar .dropdown-title,
+.bs-dropdown a {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.bs-nav-bar a:hover {
+background-color: var(--heiro-custom-light-orange);
+}
+
+.dropdown-title {
+position: relative;
+}
+
+.bs-dropdown {
+position: absolute;
+left: -5px;
+top: 31px; /* slightly adjusted */
+display: none;
+width: fit-content;
+min-width: 100%;
+background-color: var(--heiro-custom-pink-opacity);
+}
+
+.dropdown-title:hover .bs-dropdown {
+display: block; /* changed from flex */
+}
+
+.bs-nav-bar .bs-dropdown a {
+min-height: 25px;
+height: fit-content;
+min-width: 100%;
+width: fit-content;
+text-decoration: none;
+color: black;
+box-sizing: border-box;
+padding: 5px;
+}
+/********** Nav Bar END **********/
+
+
+
+
+
+
+
+
+
+/********** Carousel START **********/
+.container-bs43 {
+    max-width: 100%;
+    height: 100%;
+    padding-top: calc(20.83% - 30px);
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container-bs43  *:nth-last-child(2) {
+    margin-right: 25px;
+}
+
+.container-bs43  input {
+    z-index: 5;
+    margin-bottom: 15px;
+    visibility: hidden;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.container-bs43 input:before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.101);
+    border: 3px solid white;
+    border-radius: 50%;
+   
+}
+
+.container-bs43  input:checked:before {
+    background: var(--heiro-custom-orange);
+    border-radius: 50%;
+}
+
+.container-bs43  input:checked+.slide {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity .5s ease;
+
+}
+
+.container-bs43 .slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/********** Carousel END **********/
+
+
+
+
+
+
+
+
+
+/********** MCLP START **********/
+
+/********** MCLP END **********/
+
+
+
+
+
+
+
+
+
+
+/********** Catalog START **********/
+
+/********** Catalog END **********/
+
+
+
+
+
+
+
+
+/********** Profile START **********/
+
+/********** Profile END **********/
+
+
+
+/********** Home Page 2024 END **********/
+
+/********** GuyKat CSS END **********/
