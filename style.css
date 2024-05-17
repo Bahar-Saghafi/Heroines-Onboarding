@@ -1,11 +1,22 @@
 /********** GuyKat CSS START **********/
-body {
-
-    margin: 0;
+#doc-page-43 .pages-widget-page,
+#doc-page-43 .widget-render,
+#doc-page-43 .widget-render-column {
+    margin:  0!important;
     padding: 0;
     max-width: 100%;
     width: 100%;
+    overflow-x: hidden !important;
 }
+
+#doc-page-43 .widget-render-row:nth-child(2){
+    max-width: 1440px!important;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: 32px;
+}
+
+
 
 /********** Global Styling START **********/
 
@@ -15,7 +26,7 @@ body {
 --heiro-color-layout-background: #fff!important;
 
 /* custom additions */
---heiro-custom-pink: #F0B3CE;
+--heiro-custom-pink: #eecada;
 --heiro-custom-pink-opacity:#f0b3ce88; /* opacity */
 --heiro-custom-orange: #EB816D;
 --heiro-custom-light-orange: #FFA797;
@@ -34,6 +45,19 @@ body {
 
 /********** Docebo Top Bar START **********/
 
+.internal-header-logo-link {
+    background-image: url('https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/logo_fotor_bg_remover_20240415155051.png');
+}
+
+/*** page title hidden ***/
+#doc-layout-title-bar {
+    display: none;
+}
+
+#doc-layout-breadcrumbs {
+    background-color: pink!important;
+
+}
 /********** Docebo Top Bar END **********/
 
 
@@ -61,17 +85,17 @@ body {
 
 
 /********** Nav Bar START **********/
-#doc-bspage-43 {
-z-index: 2;
+#doc-page-43 {
+   z-index: 2; 
 }
 
-#doc-bspage-43 .htmlwidget .content {
+#doc-page-43 .htmlwidget .content {
 overflow-y: visible;
 }
 
 .bs-nav-bar {
 margin: auto;
-background-color: var(--heiro-custom-pink-opacity);
+background-color: var(--heiro-custom-pink);
 position: relative;
 width: 100%;
 height: 30px;
@@ -92,7 +116,6 @@ text-decoration: none;
 .bs-nav-bar .dropdown-title {
 padding: 0 10px;
 height: 30px; /*must be same as nav bar itself*/
-font-family: 'Verdana';
 }
 
 .bs-nav-bar .normal-link,
@@ -114,15 +137,15 @@ position: relative;
 .bs-dropdown {
 position: absolute;
 left: -5px;
-top: 31px; /* slightly adjusted */
+top: 31px; 
 display: none;
 width: fit-content;
 min-width: 100%;
-background-color: var(--heiro-custom-pink-opacity);
+background-color: var(--heiro-custom-pink);
 }
 
 .dropdown-title:hover .bs-dropdown {
-display: block; /* changed from flex */
+display: block; 
 }
 
 .bs-nav-bar .bs-dropdown a {
@@ -148,13 +171,14 @@ padding: 5px;
 /********** Carousel START **********/
 .container-bs43 {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     padding-top: calc(20.83% - 30px);
     position: relative;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    z-index: 0; 
 }
 
 .container-bs43  *:nth-last-child(2) {
@@ -211,6 +235,7 @@ padding: 5px;
     height: 100%;
     z-index: 1;
 }
+
 /********** Carousel END **********/
 
 
@@ -223,16 +248,27 @@ padding: 5px;
 
 /********** MCLP START **********/
 
+
+
 /********** MCLP END **********/
 
 
 
 
+#doc-page-43 .my-courses-and-learning-plans-content-wrapper {
+    display: flex;
+    position: relative;
+    max-height: 330px;
+    max-width: 900px;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
 
-
-
-
-
+.my-courses-and-learning-plans-total-count {
+    display: none;
+}
+    
 
 /********** Catalog START **********/
 
@@ -243,9 +279,41 @@ padding: 5px;
 
 
 
-
-
 /********** Profile START **********/
+
+/*** width setting ***/
+#doc-page-43 .mdl-cell--4-col {
+    width: 50%;
+}
+    
+/*** color & structure ***/
+#doc-page-43 .ng-star-inserted.profile {
+   background-color: var(--heiro-custom-light-orange);
+   display: flex; 
+   gap: 20px; 
+}
+
+#doc-page-43 .details-container {
+    color: black;
+    padding: 10 10 10 20;
+}
+
+#doc-page-43 .widget-actions-container {
+    background-color: var(--heiro-custom-light-orange);
+}
+
+#doc-page-43 .mdl-button {
+    border: 2px solid black;
+    margin-right: 40px;
+    
+}
+
+/*** Profile img size ***/
+#doc-page-43 .avatar__initials {
+    width: 70px!important;
+    height: 70px!important;
+    
+}
 
 /********** Profile END **********/
 
