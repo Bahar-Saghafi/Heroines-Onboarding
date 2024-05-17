@@ -7,6 +7,7 @@
     max-width: 100%;
     width: 100%;
     overflow-x: hidden !important;
+    
 }
 
 #doc-page-43 .widget-render-row:nth-child(2){
@@ -72,6 +73,10 @@
 /********** Home Page 2024 START **********/
 
 /********** Entire Page START **********/
+
+#doc-page-43 .widget-render {
+    background-color: white;
+}
 
 /********** Entire Page END **********/
 
@@ -248,31 +253,95 @@ padding: 5px;
 
 /********** MCLP START **********/
 
+#doc-page-43 .my-courses-and-learning-plans-content-wrapper .ui-cards-grid-wrapper {
+    display: flex;
+    position: relative;
+    max-height: 330px;
+    max-width: 1000px;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: var(--ui-spacing-sm) 0;
+}
 
+/* Scrollbar */
+#doc-page-43 .my-courses-and-learning-plans-content-wrapper .ui-cards-grid-wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+#doc-page-43 .my-courses-and-learning-plans-content-wrapper .ui-cards-grid-wrapper::-webkit-scrollbar-track {
+    background: var(--heiro-custom-orange);
+    border: 5px solid white;
+}
+
+#doc-page-43 .my-courses-and-learning-plans-content-wrapper .ui-cards-grid-wrapper::-webkit-scrollbar-thumb {
+    background-color:  var(--heiro-custom-orange);
+    border-radius: 10px;
+}
+
+
+#doc-page-43 .ui-cards-grid-slot {
+    min-width: 250px;
+}
+
+#doc-page-43 .my-courses-and-learning-plans-total-count {
+    display: none;
+}
 
 /********** MCLP END **********/
 
 
 
 
-#doc-page-43 .my-courses-and-learning-plans-content-wrapper {
-    display: flex;
-    position: relative;
-    max-height: 330px;
-    max-width: 900px;
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    
 
-.my-courses-and-learning-plans-total-count {
-    display: none;
-}
-    
+
+
+
+
 
 /********** Catalog START **********/
 
+#doc-page-43 .ui-carousel-items-wrapper {
+    display: flex;
+    position: relative;
+    max-height: 330px;
+    max-width: 1000px;
+    flex-direction: row;
+    overflow-x: auto!important;
+    overflow-y: hidden;
+    padding: var(--ui-spacing-sm) 0;
+}
+
+/* Scrollbar  */
+#doc-page-43 .ui-carousel-items-wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+#doc-page-43 .ui-carousel-items-wrapper::-webkit-scrollbar-track {
+    background: var(--heiro-custom-orange);
+    border: 5px solid white;
+}
+
+#doc-page-43 .ui-carousel-items-wrapper::-webkit-scrollbar-thumb {
+    background-color:  var(--heiro-custom-orange);
+    border-radius: 10px;
+}
+
+
+
+#doc-page-43 .dcb-ui-carousel-item {
+    min-width: 250px;
+}
+
+#doc-page-43 .ui-carousel-header {
+    display: none;
+}
+
 /********** Catalog END **********/
+
+
 
 
 
@@ -285,9 +354,9 @@ padding: 5px;
 #doc-page-43 .mdl-cell--4-col {
     width: 50%;
 }
-    
+
 /*** color & structure ***/
-#doc-page-43 .ng-star-inserted.profile {
+#doc-page-43 .ng-star-inserted .profile {
    background-color: var(--heiro-custom-light-orange);
    display: flex; 
    gap: 20px; 
