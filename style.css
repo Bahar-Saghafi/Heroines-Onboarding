@@ -11,7 +11,7 @@
 }
 
 #doc-page-43 .widget-render-row:nth-child(2){
-    max-width: 1440px!important;
+    max-width: 1500px!important;
     margin: 0 auto;
     flex-wrap: nowrap;
     gap: 32px;
@@ -348,39 +348,58 @@ padding: 5px;
 
 
 
+
 /********** Profile START **********/
 
 /*** width setting ***/
 #doc-page-43 .mdl-cell--4-col {
-    width: 50%;
+    width: 60%;
+}
+
+#doc-widget-304 {
+    width: 515px;
+    padding-left: 25px;
 }
 
 /*** color & structure ***/
 #doc-page-43 .ng-star-inserted .profile {
    background-color: var(--heiro-custom-light-orange);
    display: flex; 
-   gap: 20px; 
+   gap: 30px; 
+
 }
 
 #doc-page-43 .details-container {
     color: black;
-    padding: 10 10 10 20;
+    padding: 20 20 0 50;
+    font-size: 18px;
 }
+
 
 #doc-page-43 .widget-actions-container {
     background-color: var(--heiro-custom-light-orange);
+    padding-bottom: 20px;
+    border-top: hidden;
 }
 
 #doc-page-43 .mdl-button {
     border: 2px solid black;
-    margin-right: 40px;
+    margin-right: 50px;
     
 }
 
 /*** Profile img size ***/
 #doc-page-43 .avatar__initials {
-    width: 70px!important;
-    height: 70px!important;
+    width: 100px!important;
+    height: 100px!important;
+    margin-top: 10px;
+    background-image: url("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/mainimage1.png")!important;    
+    background-size: 110px!important;
+    
+}
+
+.avatar__initials .ng-star-inserted {
+    visibility: hidden;
     
 }
 
@@ -388,6 +407,125 @@ padding: 5px;
 
 
 
+
+
+
+
+
+
+/********** Activity Start **********/
+
+#doc-widget-305 {
+    
+    .widget-activity  {
+        min-height: 50px; 
+        max-height: 70px;
+    }
+    
+   .donut-chart-canvas-content {
+       display: none;
+   }
+
+   .legend-title-holder {
+       display: none;
+   }
+    .bullet-color {
+        display: none;
+    }
+    
+    .social-activities {
+        display: none;
+    }
+    
+    .donut-chart-item  {
+        display: inline;
+        padding: 10px 22px;
+        margin-right: 30px;
+
+        
+    }
+    
+   .donut-chart-item:nth-child(1) {
+            border: 2px solid var(--heiro-custom-pink-opacity);
+    }
+  .donut-chart-item:nth-child(2) {
+            border: 2px solid var(--heiro-custom-light-orange);
+    }
+  .donut-chart-item:nth-child(3) {
+            border: 2px solid var(--heiro-custom-light-purple);
+    }
+
+    .donut-chart-wrapper {
+        justify-content: left;
+        overflow: visible;
+        padding-top: 50px;
+    }
+    
+    .widget-body {
+        padding-left: 0;
+    }
+    
+    .widget-activity {
+        box-shadow: none;
+    }
+    
+    .widget-full {
+        height: 100px;
+    }
+    
+}
+
+
+
+
+
+/********** Activity END **********/
+
+
+
+
+
+
+
+
+
+
+
+/********** My Course Button Start **********/
+
+#doc-widget-321 {
+    
+    .btnpage23 {
+       background-color: var(--heiro-custom-light-orange);
+        border: 0;
+        padding: 20px 205px;
+        color: white;
+    }
+    
+    .content {
+        padding-left: 30px;
+         
+    }
+}
+
+/********** My Course Button END **********/
+
+
+
+
+
+
+
+
+
+
+
 /********** Home Page 2024 END **********/
 
 /********** GuyKat CSS END **********/
+
+
+
+
+
+
