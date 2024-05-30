@@ -453,7 +453,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     font-style: normal;
     font-weight: bold;
     color: #080D3A;
-}
+} 
 
 #doc-widget-111 .details-container,
 #doc-widget-493 .details-container,
@@ -750,9 +750,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     #doc-widget-493 .additional-fields-container,
     #doc-widget-501 .additional-fields-container {
         padding-left: 22%;
-    }
-    
-    
+    }  
     
 }
 
@@ -922,7 +920,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 /* My Leraning WIDGET CSS */
 /*  TITLE */
 
-.widget-render-column:nth-child(2) {
+#doc-page-33 .widget-render-column:nth-child(2) {
     border: 1px solid #dadcdf;
     padding: 0 50px;
     border-radius: 20px;
@@ -931,7 +929,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 }
 
 
-.fhs-my-learning-banner {
+#doc-page-33 .fhs-my-learning-banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -941,7 +939,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     border-radius: 10px 10px 0px 0px;
 }
 
-.fhs-ml-va-button {
+#doc-page-33 .fhs-ml-va-button {
     display: flex;
     align-items: center;
     margin-right: 0;
@@ -949,15 +947,15 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 
 }
 
-.fhs-ml-va-button:hover h2,
-.fhs-ml-va-button:hover img {
+#doc-page-33 .fhs-ml-va-button:hover h2,
+#doc-page-33 .fhs-ml-va-button:hover img {
     transform: scale(0.96);
     transition: all .2s ease-in-out;
 
 }
 
 
-.fhs-ml-va-button h2 a {
+#doc-page-33 .fhs-ml-va-button h2 a {
     background: #fff;
     border-radius: 8px;
     padding: 5px 28px 5px 14px;
@@ -970,7 +968,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 
 }
 
-.fhs-ml-va-button img {
+#doc-page-33 .fhs-ml-va-button img {
     position: absolute;
     right: 0px;
     top: 25px;
@@ -978,7 +976,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 }
 
 
-.fhs-my-learning-title h1 {
+#doc-page-33 .fhs-my-learning-title h1 {
     color: var(--FHS-custom-Navy);
     font-weight: bold!important;
     font-style: normal;
@@ -991,18 +989,27 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 @media (max-width: 960px) and (min-width: 479px) {
     .widgets-column-medium {
         margin-bottom: 30px!important;
+        width: 95%!important;
     }
         
 } 
 
-@media screen and (max-width: 450px) { 
-    .fhs-my-learning-title h1 {
+@media screen and (max-width: 460px) { 
+    #doc-page-33 .fhs-my-learning-title h1 {
         font-size: 20px!important;
     }
-    .widgets-column-medium {
+    #doc-page-33 .widgets-column-medium {
         margin-bottom: 30px!important; 
     }
-}
+} 
+
+@media screen and (max-width: 330px) { 
+    #doc-page-33 .ui-cards-grid-wrapper {
+        padding-bottom: 0px!important;
+    }
+
+}    
+
 
 /*-----------Learning Plan END--------------*/
 
@@ -1024,21 +1031,17 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 }
 
 
-.mdl-cell--6-col:nth-child(2) {
+#doc-page-33 .mdl-cell--6-col:nth-child(2) {
     border:0!important;
     padding-left: 0px;
-    padding-right: 0px;
-    
-
-    
+    padding-right: 0px;   
 }
 
 .mdl-cell--6-col #doc-widget-116 {
     margin-left: 0px!important;
     margin-right: 0px!important;
     padding-left: 0px!important;
-    padding-right: 0px!important;
-    
+    padding-right: 0px!important;   
 }
 
 /* Hide the discription */
@@ -1046,6 +1049,11 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     display: none!important;
 }
 
+/* Color and weight of cards texts */
+.dcb-ui-card-content a {
+    font-weight: bold!important;
+    color: #333B35!important;
+} 
 
 /* Styles for channel items to grow on hover */
 #doc-widget-115 .ui-card-with-shadow,
@@ -1209,7 +1217,6 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     border-radius: 10px;
 }
 
-
 /* Removes content upload type icon  */
 #doc-widget-115 ui-icon.ui-icon-size-xs.dcb-ui-icon.ui-icon,
 #doc-widget-116 ui-icon.ui-icon-size-xs.dcb-ui-icon.ui-icon,
@@ -1273,7 +1280,6 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 
 }
 
-
 #doc-widget-115 .ui-carousel-header,
 #doc-widget-116 .ui-carousel-header,
 #doc-widget-497 .ui-carousel-header,
@@ -1294,7 +1300,6 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     display: none;
 }
 
-
 /* Styles file type on course card */
 #doc-widget-115 .ui-card-item-type.ui-typography-subtitle.ui-color-typography-primary span,
 #doc-widget-116 .ui-card-item-type.ui-typography-subtitle.ui-color-typography-primary span,
@@ -1306,9 +1311,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     font-weight: 500;
 }
 
-
 /* arrow buttons styling */
-
 #doc-widget-115 .ui-button-fab button.ui-ripple,
 #doc-widget-116 .ui-button-fab button.ui-ripple,
 #doc-widget-497 .ui-button-fab button.ui-ripple,
@@ -1326,7 +1329,6 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 #doc-widget-505 .ui-carousel-chunk-arrow ui-icon span.color-neutral svg,
 #doc-widget-506 .ui-carousel-chunk-arrow ui-icon span.color-neutral svg {
     fill: #fff;
-
 }
 
 /* for if a channel is empty */
@@ -1335,7 +1337,6 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
 #doc-page-79 .ui-blank-slate .ui-illustration {
     width: 100%;
 }
-
 
 /* CHANNEL WIDGETS RESPONSIVENESS */
 
@@ -1348,10 +1349,7 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
     #doc-page-79 .widget-render-row:nth-child(3) .widget-render-column:nth-child(1),
     #doc-page-79 .widget-render-row:nth-child(3) .widget-render-column:nth-child(2) {
         width: calc(100% - 30px) !important;
-    }
-
-
-
+    } 
 }
 
 @media screen and (max-width: 525px) {
@@ -1374,7 +1372,14 @@ doc-layout-internal-header#doc-layout-internal-header span.subscription-btn-titl
                  
     }
 
+} 
+
+@media screen and (max-width: 370) {
+.ui-carousel-chunk-info .ui-typography-body {
+    margin-right: 0xp!important;
+    }
 }
+
 
 #doc-page-33 .ui-data-browser-controls-bar.shadowed.ui-media-md.ng-star-inserted,
 #doc-page-78 .ui-data-browser-controls-bar.shadowed.ui-media-md.ng-star-inserted,
