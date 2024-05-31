@@ -491,10 +491,6 @@ padding: 5px;
     
 }
 
-
-
-
-
 /********** Activity END **********/
 
 
@@ -566,6 +562,7 @@ padding: 5px;
 .tabs-header_element:nth-child(2) {
     background-color: white;
 }
+/********** Gamification END **********/
 
 
 
@@ -623,8 +620,8 @@ padding: 5px;
 
 .button-hero strong {
     font-weight: bold;
-}
-       
+} 
+
 /********** Custom Buttons END **********/
 
 
@@ -643,6 +640,7 @@ padding: 5px;
     border-radius: 8px;
     max-width: 410px;
     text-align: left;
+    margin-top: 35px;
 }
 
 .mission-section h2 {
@@ -689,9 +687,6 @@ padding: 5px;
 .donate-button {
     background-color: #fff;
 }
-
-
-
      
 /********** Our Mission Widget END **********/
 
@@ -706,16 +701,49 @@ padding: 5px;
 /********** Youtube Video Start **********/
 #widget2 {
     height: 290px!important;
+    margin-top: 30px;
 } 
 
 #doc-widget-333 {
     margin-right: 20px;
     margin-top: 10px;
 }
-
-
 /********** Youtube Video END **********/
 
+
+
+
+
+
+
+
+
+/********** Calendar Start **********/
+
+#doc-page-43 .bg-main {
+    background-color: #EB816D!important;
+} 
+
+#doc-page-43 .calendar-header-control {
+    border: none!important;
+} 
+
+#doc-page-43 .calendar-arrow {
+    border: none!important;
+} 
+
+#doc-page-43 .export-show-button {
+    border: none!important;
+}
+
+#doc-page-43 .cal-month-view .cal-cell-row {
+    background-color: #FFA797!important;
+} 
+
+.widget-my-calendar {
+    margin-right: 40px;
+}
+/********** Calendar END **********/
 
 
 
