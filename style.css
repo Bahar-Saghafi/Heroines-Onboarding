@@ -1,3 +1,4 @@
+
 /********** GuyKat CSS START **********/
 #doc-page-43 .pages-widget-page,
 #doc-page-43 .widget-render,
@@ -23,6 +24,9 @@
     gap: 32px;
 }
 
+#doc-page-43 .wrapper-shadow {
+    box-shadow: none!important;
+}
 /********** Global Styling START **********/
 
 /* Colour variables */
@@ -210,13 +214,9 @@
     background-color: white;
 }
 
-#doc-layout-breadcrumbs {
-    background-color: pink!important;
-
-} 
-
 .breadcrumbs {
-    background: var(--heiro-custom-light-orange)!important;
+    background-color: var(--heiro-custom-light-orange)!important;
+
 } 
 
 .global-search-boxed-submit {
@@ -260,74 +260,89 @@
 }
 
 #doc-page-43 .htmlwidget .content {
-overflow-y: visible;
+   overflow-y: visible;
 }
 
 .bs-nav-bar {
-margin: auto;
-background-color: var(--heiro-custom-pink);
-position: relative;
-width: 100%;
-height: 30px;
-display: flex;
-justify-content: center;
-gap: 20px;
-color: black;
-text-align: center;
-z-index: 1;
+   margin: auto;
+   background-color: var(--heiro-custom-pink);
+   position: relative;
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   color: black;
+   text-align: center;
+   z-index: 1;
 }
 
-.bs-nav-bar a {
-color: black;
-text-decoration: none;
+#doc-page-43 .bs-nav-bar a {
+   color: black;
+   text-decoration: none;
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition property for transform */
 }
 
-.bs-nav-bar .normal-link,
-.bs-nav-bar .dropdown-title {
-padding: 0 10px;
-height: 30px; /*must be same as nav bar itself*/
+#doc-page-43 .bs-nav-bar .normal-link,
+#doc-page-43 .bs-nav-bar .dropdown-title {
+   padding: 0 10px;
+   height: 30px; /*must be same as nav bar itself*/
 }
 
-.bs-nav-bar .normal-link,
-.bs-nav-bar .dropdown-title,
-.bs-dropdown a {
-display: flex;
-flex-direction: column;
-justify-content: center;
+#doc-page-43 .bs-nav-bar .normal-link,
+#doc-page-43 .bs-nav-bar .dropdown-title,
+#doc-page-43 .bs-dropdown a {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
-.bs-nav-bar a:hover {
-background-color: var(--heiro-custom-light-orange);
+#doc-page-43 .bs-nav-bar a:hover {
+   background-color: var(--heiro-custom-light-orange);
+   transform: scale(1.1); /* Add zoom effect */
 }
 
-.dropdown-title {
-position: relative;
+#doc-page-43 .dropdown-title {
+   position: relative;
+   cursor: pointer;
 }
 
-.bs-dropdown {
-position: absolute;
-left: -5px;
-top: 31px; 
-display: none;
-width: fit-content;
-min-width: 100%;
-background-color: var(--heiro-custom-pink);
+#doc-page-43 .bs-dropdown {
+   position: absolute;
+   left: -5px;
+   top: 31px;
+   display: none;
+   width: fit-content;
+   min-width: 100%;
+   background-color: var(--heiro-custom-pink);
+   opacity: 0;  
+   transform: translateY(-10px)!important; /* Set initial position slightly upwards */
+   transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
-.dropdown-title:hover .bs-dropdown {
-display: block; 
+#doc-page-43 .dropdown-title:hover .bs-dropdown {
+   display: block;
+   opacity: 1; /* Set opacity to 1 when hovered */
+   transform: translateY(0); /* Reset position to normal when hovered */
 }
 
-.bs-nav-bar .bs-dropdown a {
-min-height: 25px;
-height: fit-content;
-min-width: 100%;
-width: fit-content;
-text-decoration: none;
-color: black;
-box-sizing: border-box;
-padding: 5px;
+#doc-page-43 .bs-nav-bar .bs-dropdown a {
+   min-height: 25px;
+   height: fit-content;
+   min-width: 100%;
+   width: fit-content;
+   text-decoration: none;
+   color: black;
+   box-sizing: border-box;
+   padding: 5px;
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition property for transform */
 }
+
+#doc-page-43 .bs-nav-bar .bs-dropdown a:hover {
+   transform: scale(1.1); /* Add zoom effect */
+}
+
+
 
 /********** Nav Bar END **********/
 
@@ -407,6 +422,30 @@ padding: 5px;
     z-index: 1;
 }
 
+.carousel-title {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+}
+
+.carousel-title2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+}
+
 /********** Carousel END **********/
 
 
@@ -418,6 +457,42 @@ padding: 5px;
 
 
 /********** MCLP START **********/
+
+#doc-page-43 .common-widget-title {
+    font-weight: bold;
+    font-size: 20px!important;
+}
+
+#doc-page-43 .ui-data-browser-controls-bar {
+    width: 890px!important;
+    margin-left: 20px;
+}
+
+#doc-page-43 .ui-data-browser-controls-bar {
+}
+
+#doc-page-43 .ui-typography-heading-5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#doc-page-43 .ui-data-browser-controls-bar-end {
+    display: none!important;
+} 
+
+#doc-page-43 .dcb-ui-card-content {
+    height: 100px;
+}
+
+#doc-page-43 .ui-card-wrapper {
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+
+} 
+
+#doc-page-43 .color-neutral svg {
+    fill: black!important;
+}
 
 #doc-page-43 .my-courses-and-learning-plans-content-wrapper .ui-cards-grid-wrapper {
     display: flex;
@@ -505,14 +580,13 @@ padding: 5px;
 }
 
 #doc-page-43 .ui-carousel-items-wrapper::-webkit-scrollbar-thumb {
-    background-color:  var(--heiro-custom-orange);
+    background-color: var(--heiro-custom-orange);
     border-radius: 10px;
 }
 
-
-#doc-page-43 .dcb-ui-carousel-item {
-    min-width: 250px;
-}
+#doc-page-43 .ui-data-browser-content {
+    margin: 20px!important;
+} 
 
 #doc-page-43 .ui-carousel-header {
     display: none;
@@ -545,7 +619,6 @@ padding: 5px;
    background-color: var(--heiro-custom-light-orange);
    display: flex; 
    gap: 30px; 
-
 }
 
 #doc-page-43 .details-container {
@@ -563,7 +636,6 @@ padding: 5px;
 #doc-page-43 .mdl-button {
     border: 2px solid black;
     margin-right: 50px;
-    
 }
 
 /*** Profile img size ***/
@@ -572,13 +644,11 @@ padding: 5px;
     height: 100px!important;
     margin-top: 10px;
     background-image: url("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/mainimage1.png")!important;    
-    background-size: 110px!important;
-    
+    background-size: 110px!important; 
 }
 
 .avatar__initials .ng-star-inserted {
-    visibility: hidden;
-    
+    visibility: hidden;  
 }
  
 /********** Profile END **********/
@@ -672,8 +742,7 @@ padding: 5px;
 }
     
 #doc-widget-326 .content {
-    padding-left: 30px;
-         
+    padding-left: 30px;       
 }
 
 /********** My Course Button END **********/
@@ -801,7 +870,6 @@ padding: 5px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
     max-width: 410px;
     height: 310px!important;
     text-align: left;
@@ -821,9 +889,9 @@ padding: 5px;
     line-height: 2!important;
 }
 
-.mission-section a {
+.mission-section p a {
     color: #000;
-    text-decoration: linear;
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -837,23 +905,27 @@ padding: 5px;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: 2px solid #000;
-    border-radius: 4px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
+.button-hero2:hover {
+    background-color: #EB816D;
+}
+
+
 .button-hero2 img {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .donate-button {
     background-color: #fff;
 }
-     
+
 /********** Our Mission Widget END **********/
 
 
@@ -865,12 +937,13 @@ padding: 5px;
 
 
 /********** Youtube Video Start **********/
-#widget2 {
-    height: 340px!important;
+.video-embed-widget  {
+    border: none!important;
 } 
 
 .iframe-player-wrapper {
     margin-top: 40px;
+    height: 80px!important;
 } 
 
 #doc-widget-333 {
