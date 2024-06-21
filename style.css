@@ -21,12 +21,12 @@
     max-width: 1500px!important;
     margin: 0 auto;
     flex-wrap: nowrap;
-    gap: 32px;
 }
 
 #doc-page-43 .wrapper-shadow {
     box-shadow: none!important;
-}
+} 
+
 /********** Global Styling START **********/
 
 /* Colour variables */
@@ -342,8 +342,6 @@
    transform: scale(1.1); /* Add zoom effect */
 }
 
-
-
 /********** Nav Bar END **********/
 
 
@@ -359,7 +357,7 @@
 .container-bs43 {
     max-width: 100%;
     height: auto;
-    padding-top: calc(20.83% - 30px);
+    padding-top: calc(17.51% - 30px);
     position: relative;
     margin: auto;
     display: flex;
@@ -410,7 +408,6 @@
 .slide {
     opacity: 0;
     transition: opacity .5s ease;
-
 }
 
 .container-bs43 .slide img {
@@ -418,7 +415,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 300px;
+    object-fit: cover;
     z-index: 1;
 }
 
@@ -428,7 +426,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 52px;
+    font-size: 33px;
     font-weight: bold;
     z-index: 1;
     text-align: center;
@@ -440,7 +438,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: bold;
     z-index: 2;
     text-align: center;
@@ -460,16 +458,18 @@
 
 #doc-page-43 .common-widget-title {
     font-weight: bold;
-    font-size: 20px!important;
+    font-size: 25px!important;
 }
 
 #doc-page-43 .ui-data-browser-controls-bar {
-    width: 890px!important;
-    margin-left: 20px;
+    width: 920px!important;
+    margin-left: 8px;
 }
 
-#doc-page-43 .ui-data-browser-controls-bar {
-}
+.ui-cards-grid-wrapper {
+    padding-top: 0px!important;
+    width: 920px!important;
+} 
 
 #doc-page-43 .ui-typography-heading-5 {
     font-size: 14px;
@@ -521,9 +521,11 @@
     border-radius: 10px;
 }
 
+/* Scrollbar  END */
 
 #doc-page-43 .ui-cards-grid-slot {
     min-width: 250px;
+    padding-left: 0px!important;
 }
 
 #doc-page-43 .my-courses-and-learning-plans-total-count {
@@ -531,7 +533,7 @@
 }
 
 #doc-page-43 .ui-badge-status-success
- {
+{
     background-color: white!important;
     color: black!important;
     border: 3px solid #7771D6;
@@ -541,7 +543,6 @@
     background-color: white;
     color: black;
     border: 3px solid #FFA797;
-    
 }
 
 /********** MCLP END **********/
@@ -557,18 +558,22 @@
 
 /********** Catalog START **********/
 
+#doc-widget-314 {
+    margin-top: 40px!important;
+}
+
 #doc-page-43 .ui-carousel-items-wrapper {
     display: flex;
     position: relative;
-    max-height: 330px;
-    max-width: 1000px;
+    height: 300px;
+    width: 930px;
     flex-direction: row;
     overflow-x: auto!important;
     overflow-y: hidden;
     padding: var(--ui-spacing-sm) 0;
 }
 
-/* Scrollbar  */
+/* Scrollbar */
 #doc-page-43 .ui-carousel-items-wrapper::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -585,11 +590,26 @@
 }
 
 #doc-page-43 .ui-data-browser-content {
-    margin: 20px!important;
+    margin-top: 0px!important;
+    margin-left: 20px;
 } 
 
 #doc-page-43 .ui-carousel-header {
     display: none;
+} 
+
+.dcb-ui-carousel-item {
+    padding-left: 0px!important;
+} 
+
+.course-catalog-content-wrapper {
+    padding-top: 0px!important;
+}
+
+/* Scrollbar END */
+
+#doc-widget-314 {
+    margin-bottom: 0px!important;
 }
 
 /********** Catalog END **********/
@@ -605,52 +625,87 @@
 /********** Profile START **********/
 
 /*** width setting ***/
+
+
 #doc-page-43 .mdl-cell--4-col {
-    width: 60%;
+    width: 55%;
 }
 
 #doc-widget-304 {
-    width: 515px;
-    padding-left: 25px;
+    width: 530px;
 }
 
 /*** color & structure ***/
-#doc-page-43 .ng-star-inserted .profile {
+#doc-page-43 .profile {
    background-color: var(--heiro-custom-light-orange);
    display: flex; 
-   gap: 30px; 
+   padding-bottom: 10px; 
+   gap: 20px;
+   height: 60px;
 }
 
 #doc-page-43 .details-container {
     color: black;
-    padding: 20 20 0 50;
-    font-size: 18px;
+    padding: 10 10 0 0;
+}
+
+#doc-page-43 .fullname {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#doc-page-43 .email{
+    font-size: 15px!important;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 #doc-page-43 .widget-actions-container {
     background-color: var(--heiro-custom-light-orange);
-    padding-bottom: 20px;
+    padding: 15px;
+    padding-left: 110px!important;
     border-top: hidden;
+} 
+
+
+#doc-page-43 .root .mdl-button {
+    border: 2px solid black;
+    margin-left: 20px;
+    color: black!important;
+    font-family: Arimo!important;
 }
 
-#doc-page-43 .mdl-button {
-    border: 2px solid black;
-    margin-right: 50px;
+#doc-page-43 .widget-actions-container {
+    justify-content: center;
 }
+
 
 /*** Profile img size ***/
-#doc-page-43 .avatar__initials {
-    width: 100px!important;
-    height: 100px!important;
+#doc-page-43 .avatar-container {
+    width: 110px!important;
+    height: 110px!important;
+    margin-left: 20px;
     margin-top: 10px;
     background-image: url("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/mainimage1.png")!important;    
     background-size: 110px!important; 
+    border-radius: 60px;
 }
 
 .avatar__initials .ng-star-inserted {
     visibility: hidden;  
+} 
+
+.avatar-container .avatar__initials {
+    display: none;
 }
- 
+
+/*** Leader Board ***/
+
+.ellipsis-wrapper {
+    display: none!important;
+}
+
+
 /********** Profile END **********/
 
 
@@ -671,9 +726,11 @@
 #doc-widget-305 .donut-chart-canvas-content {
    display: none;
 }
+
 #doc-widget-305 .legend-title-holder {
    display: none;
 }
+
 #doc-widget-305 .bullet-color {
     display: none;
 }
@@ -684,8 +741,12 @@
 
 #doc-widget-305 .donut-chart-item  {
     display: inline;
-    padding: 10px 22px;
+    padding: 10px 25px;
     margin-right: 30px;   
+}
+
+#doc-page-43 .donut-chart-wrapper {
+    padding-top: 40px!important;
 }
 
 #doc-widget-305 .donut-chart-item:nth-child(1) {
@@ -716,6 +777,18 @@
 
 #doc-widget-305 .widget-full {
     height: 100px;
+} 
+
+#doc-page-43 .item-name-template .value {
+    font-weight: bold;
+}
+
+.donut-chart-legend {
+    margin-left: 0px!important;
+}
+
+.gamification-widget__wrapper {
+    height: auto!important;
 }
 
 /********** Activity END **********/
@@ -735,14 +808,19 @@
     background-color: var(--heiro-custom-light-orange);
     border: 0;
     color: white;
-    width: 510px!important;
+    width: 530px!important;
     height: 50px!important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+#doc-widget-326 .btnpage23:hover{
+    color: black;
 }
     
 #doc-widget-326 .content {
-    padding-left: 30px;       
+    padding-left: 0px;       
 }
 
 /********** My Course Button END **********/
@@ -763,35 +841,85 @@
 
 #doc-widget-325 .gamification-widget__wrapper {
     box-shadow: none;
-}
-
-#doc-widget-325 {
-    padding-left: 30px;
+    max-height: auto;
     max-width: 100%;
-}
-
-
-#doc-widget-325 .ng-star-inserted {
-    max-height: 200px;
 }
 
 .badges-tab__wrapper .list-badges-content {
     background-color: white;
 }
 
+.mdl-tabs__tab-bar a {
+      color: black!important;
+      background-color: rgb(255,255,255);
+}
 
 .mdl-tabs__tab-bar a:hover {
       background-color: var(--heiro-custom-light-orange);
+      color: white!important;
+      border: none!important;
+} 
+
+.mdl-tabs__tab::before {
+    background-color: white!important;
+}
+
+.avatar__image { 
+    background-image: url ("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/checklist_badge_icon_pink_3d_render_png.png")!important;
+} 
+
+.list-badges-content {
+    border: none!important;
+}
+
+.tabs-content {
+    border: none!important;
+} 
+
+.border-grey-light {
+   border: none!important;
+}
+
+.view-all-btn {
+   padding: 0px!important;
+}
+
+.view-all-btn a {
+    color: black!important;
+}
+
+.my-position {
+    background-color: white!important;
+} 
+
+.list-badges-content .ng-star-inserted {
+    height: 90px;
+}
+
+.bg-grey-superlight {
+    height: 90px!important;
+}
+
+.view-all-btn .text-main:hover {
+    background-color: #FFA797;
+    padding: 10px;
+    color: white!important;
+}
+
+/*** leaderboards ***/
+
+.board-position-list .avatar__initials {
+    background-image: url("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/mainimage1.png")!important; 
+    background-size: 40px!important;
 
 }
 
-.tabs-header_element:nth-child(2) {
-    background-color: white;
-} 
+.header-message {
+    display: none!important;
+}
 
-.avatar__image { 
-
-    background-image: url ("https://cdn1.dcbstatic.com/files/m/e/megslms_docebosaas_com/userfiles/13088/Bahar Assests/checklist_badge_icon_pink_3d_render_png.png")!important;
+.list-badges-content {
+   padding: 5px 20px!important;    
 }
 
 /********** Gamification END **********/
@@ -809,9 +937,8 @@
 .button-hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    margin-top: 40px;
-    margin-left: 30px;
+    width: 520px;
+    grid-gap: 20px;
 }
 
 .button-hero {
@@ -847,7 +974,11 @@
 
 .button-hero p {
     margin: 0;
-    font-size: 14px!important;
+    font-size: 18px!important;
+}
+
+.button-hero p:hover {
+   color: white;
 }
 
 .button-hero strong {
@@ -871,22 +1002,22 @@
     padding: 20px;
     border: 1px solid #e0e0e0;
     max-width: 410px;
-    height: 310px!important;
+    height: 300px!important;
     text-align: left;
     margin-top: 35px;
 }
 
 .mission-section h2 {
-    font-size: 20px!important;
+    font-size: 25px!important;
     font-weight: bold!important;
     margin-bottom: 10px;
 }
 
 .mission-section p {
-    font-size: 16px!important;
+    font-size: 17px!important;
     color: #333;
     margin-bottom: 20px;
-    line-height: 2!important;
+    line-height: 1.7!important;
 }
 
 .mission-section p a {
@@ -904,8 +1035,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    padding: 15px 25px;
+    margin-top: 5px;
+    padding: 13px 25px;
     border: 2px solid #000;
     text-decoration: none;
     color: #000;
@@ -937,19 +1068,20 @@
 
 
 /********** Youtube Video Start **********/
+
 .video-embed-widget  {
     border: none!important;
 } 
 
 .iframe-player-wrapper {
-    margin-top: 40px;
-    height: 80px!important;
+    height: 93px!important;
 } 
 
 #doc-widget-333 {
-    margin-right: 20px;
-    margin-top: 10px;
+    width: 440px;
+    margin-top: 35px;
 }
+
 /********** Youtube Video END **********/
 
 
@@ -968,6 +1100,7 @@
 
 #doc-page-43 .calendar-header-control {
     border: none!important;
+    text-transform: none;
 } 
 
 #doc-page-43 .calendar-arrow {
@@ -976,7 +1109,7 @@
 
 #doc-page-43 .export-show-button {
     border: none!important;
-}
+} 
 
 #doc-page-43 .cal-month-view .cal-cell-row {
     background-color: #F0B3CE!important;
@@ -984,8 +1117,16 @@
 } 
 
 #doc-page-43 .widget-my-calendar {
-    width: 500px;
+    width: auto;
 }
+
+.cal-out-month .cal-day-number {
+    color: white!important;
+}
+
+.widget-my-calendar .common-widget-title {
+    margin-bottom: 5px!important;
+} 
 
 /********** Calendar END **********/
 
@@ -1034,14 +1175,14 @@
 .newsletter-button {
     background-color: #EB816D;
     color: #000;
-    padding: 10px 80px;
+    padding: 10px 100px;
     text-decoration: none;
-    border-radius: 4px;
     font-weight: bold;
 }
 
 .newsletter-button:hover {
     background-color: #FFA797;
+    text-decoration: none;
 }
 
 .footer-hero-right a {
@@ -1068,9 +1209,3 @@
 /********** Footer END **********/
 
 /********** GuyKat CSS END **********/
-
-
-
-
-
-
